@@ -1,0 +1,13 @@
+.container{
+    max-width: 1920px;
+  
+}
+.con{
+    background-color: #FFFBF7;
+}
+
+@media (max-width:768px) {
+    .con{
+        padding: 0;
+    }    
+}

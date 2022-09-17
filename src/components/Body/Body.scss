@@ -1,0 +1,132 @@
+.body {
+  .row {
+    width: 100%;
+    align-items: center;
+    height: 615px;
+    margin-bottom: 74px;
+  }
+  .img-fluid {
+    width: 615px;
+    height: 506px;
+  }
+  .title {
+    color: #2b2a28;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 50px;
+    height: 150px;
+  }
+  .paragraph {
+    color: #2b2a28;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    height: 60px;
+    padding-right: 55px;
+  }
+  .footer_section {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    div {
+      color: #cb8734;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 16px;
+      i {
+        width: 30px;
+        height: 30px;
+        margin-right: 12px;
+      }
+    }
+
+    button {
+      margin-right: 44px;
+      background: linear-gradient(180deg, #f39c32 0%, #cb8734 100%);
+      box-shadow: 0px 4px 4px rgba(203, 135, 52, 0.2);
+      border-radius: 4px;
+      border: none;
+      color: #ffffff;
+      width: 280px;
+      height: 66px;
+    }
+  }
+  .flower {
+    position: absolute;
+    right: 0;
+    top: 24px;
+    width: 122px;
+    height: 91px;
+  }
+  .layer {
+    position: absolute;
+    bottom: 47px;
+    left: 18px;
+    width: 121px;
+    height: 113px;
+  }
+}
+.mobile-content {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .body {
+    .title {
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center;
+      margin-bottom: 17px;
+    }
+    .mobile-content {
+      display: block;
+      .paragraph {
+        padding: 0;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+      }
+      .footer_section {
+        margin-top: 19px;
+        display: flex;
+        flex-direction: column;
+        button {
+          width: 230px;
+          height: 58px;
+          margin-right: 0;
+          font-size: 14px;
+        }
+        div {
+          font-size: 15px;
+          margin-top: 19px;
+          i {
+            margin-right: 9px;
+          }
+        }
+      }
+    }
+    .paragraph-mobile,
+    .footer_section-mobile {
+      display: none;
+    }
+
+    .img-fluid {
+      width: 100%;
+      height: 246.83px;
+    }
+    .flower {
+      right: 0;
+      top: 0;
+
+      width: 83.12px;
+      height: 62px;
+    }
+    .layer {
+      bottom: 0;
+      left: 0;
+      left: 18px;
+      width: 80px;
+      height: 74.71px;
+    }
+  }
+}
